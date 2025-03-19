@@ -1,0 +1,146 @@
+/*mini reset*/
+*{
+    margin: 0; /*espacamento para fora, a partir do objeto*/
+    padding: 0; /*espacamento para dentro, a partir do objeto*/
+    border: 0; 
+    box-sizing: border-box; /*espaco total da caixa, contando com a borda e os espacamentos | utiliza espacamento interno mantem tamanho widht e height*/
+
+}
+
+/* 
+# - seletor por id
+div - seletor por nome da tag
+. - seletor por classe
+*/
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area-header{
+    height: 100px;
+    width: 100%;
+    display:flex;
+    padding-left:4rem;
+    padding-right: 4rem;
+    border-bottom: 1px solid #CCC;
+    box-shadow: 0 4px 6px -6px #AAA;
+/* Cores hexadecimais vão de 0 a 6 e chegam até o 16
+0,1,2,3,4,5,6,7,8,9,A,B,C,D,E e F.  -> Estão dentro das cores RGB*/
+}
+.area-logo{
+    height: 100%;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area-logo-img{
+    width: 50%;
+    height: 50%;
+}
+.area-nav{
+    height: 100%;
+    flex: 1;
+}
+.nav-list{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    gap:10px;
+}
+.nav-list-item{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #32312d;
+    font-family: SoDo Sans,Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.nav-list-item:hover{
+    color: #008248;
+    cursor: pointer;
+}
+.area-nav-history{
+    height: 100%;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-history-img{
+    width: 100%;
+     }
+.nav-store-location{
+    height: 100px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.content{
+    width: 1440px;
+}
+.banner-area{
+    background-image: url('../images/banner01.jpg');
+    height: 428px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+.banner-text-area{
+    width: 60%;
+    height: 100%;
+    padding: 32px;
+    display: flex;
+    align-items: end;
+    color: #CCC;
+    font-size:64px;
+    text-orientation: uppercase;
+}
+.banner-text-left{
+    width: 100%;
+    border: 2px solid #D4E9E2;
+    height: 428px;
+    margin-top: 30px;
+    display: flex;
+}
+.banner-text{
+    background-color: #D4E9E2;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.banner-btn-area{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.banner-img-area-right{
+    width: 50%;
+}
+.banner-area-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.banner-btn-area a{
+    padding: 4px 6px;
+    border: 1px solid #1E3932;
+    border-radius: 10px;
+    font-weight: 500;
+    font-family:apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 15px;
+    border-radius: 25px;
+}
+
