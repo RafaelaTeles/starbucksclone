@@ -89,7 +89,7 @@ body{
     width: 1440px;
 }
 .banner-area{
-    background-image: url('../images/banner01.jpg');
+    background-image: url('../img/banner01.jpg');
     height: 428px;
     background-size: cover;
     background-position: center;
@@ -129,7 +129,7 @@ body{
 .banner-img-area-right{
     width: 50%;
 }
-.banner-area-right img{
+.banner-img-area-right img{
     width: 100%;
     height: 100%;
     object-fit: cover; 
@@ -143,4 +143,40 @@ body{
     font-size: 15px;
     border-radius: 25px;
 }
+/*FOOTER - INÍCIO*/
 
+
+.footer-area{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-content{
+    justify-content: end;
+    
+}
+
+.footer-row{
+
+}
+
+.footer-row{
+
+}
+
+.col-title{
+
+}
+
+.footer-col{
+
+}
+
+.footer col ul{
+
+}
+
+.footer-col- li{
+
+}
