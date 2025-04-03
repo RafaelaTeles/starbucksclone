@@ -1,12 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+    font-family:'SoDoSans';
+    src: url('../fonts/SoDoSans-Bold.woff');
+    
+    font-style: normal;
+}
+@font-face {
+    font-family:'SoDo Sans';
+    src: url('../fonts/SoDoSans-Regular.woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family:'SoDoSans';
+    src: url('../fonts/SoDoSans-SemiBold.woff.woff');
+    font-weight: 600;
+    font-style:normal;
+}
+
 /*mini reset*/
 *{
     margin: 0; /*espacamento para fora, a partir do objeto*/
     padding: 0; /*espacamento para dentro, a partir do objeto*/
     border: 0; 
     box-sizing: border-box; /*espaco total da caixa, contando com a borda e os espacamentos | utiliza espacamento interno mantem tamanho widht e height*/
-
+    font-family: "SoDoSans";
 }
-
 /* 
 # - seletor por id
 div - seletor por nome da tag
@@ -59,7 +79,7 @@ body{
     align-items: center;
     font-size: 1.4rem;
     color: #32312d;
-    font-family: SoDo Sans,Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "nunito", sans-serif;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -83,7 +103,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: SoDo Sans,Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "nunito", sans-serif;
    
 }
 .content{
@@ -105,9 +125,9 @@ body{
     color: #CCC;
     font-size:64px;
     text-orientation: uppercase;
-    font-family: SoDo Sans,Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "nunito", sans-serif;
     letter-spacing: -.01em;
-    font-size: 18px;
+    font-size: 60px;
 }
 .banner-text-left{
     width: 100%;
@@ -115,8 +135,8 @@ body{
     height: 428px;
     margin-top: 30px;
     display: flex;
-    font-family: SoDo Sans,Helvetica Neue, Helvetica, Arial, sans-serif;
-    letter-spacing: -.01em
+    font-family: "nunito", sans-serif;
+    letter-spacing: -.01em;
     font-size: 18px;
 }
 .banner-text{
@@ -129,11 +149,9 @@ body{
     justify-content: center;
     align-items: center;
     gap: 32px;
-    font-family: SoDo Sans,Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "nunito", sans-serif;
     letter-spacing: -.01em;
     font-size: 18px;
-
-
 }
 
 .text-line-2{
@@ -144,7 +162,7 @@ body{
     display: flex;
     width: 100%;
     justify-content: center;
-    font-family: SoDo Sans,Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "nunito", sans-serif;
     letter-spacing: -.01em
 }
 .banner-img-area-right{
@@ -160,7 +178,7 @@ body{
     border: 1px solid #1E3932;
     border-radius: 10px;
     font-weight: 500;
-    font-family:apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-family:"nunito", sans-serif;
     font-size: 15px;
     border-radius: 25px;
 }
@@ -181,7 +199,6 @@ body{
    width: 90%;
 
 }
-
 .footer-row{
     height: auto;
     width: 100%;
@@ -196,31 +213,29 @@ body{
     flex-direction: column;
 }
 .footer-col{
-    width: 180px;
-   
+    min-width: 180px;
 }
 .col-title{
     font-size: 1.0rem;
     line-height: 1.41;
     font-weight: 400;
     margin-bottom: 2.4rem;
-    font-family:apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-family:"nunito", sans-serif;
     font-size: 15px;
     border-radius: 25px;
-
 }
 .footer-col ul{
     width: 100%;
-    display: flex;
+ 
     flex-direction: column;
     gap: 20px;
     list-style: none;
 }
-
+/*footer col é referente a lista/menu no final da página*/
 .footer-col li{
     width: 100%;
     list-style-type: none;
-    font-family:apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-family:"nunito", sans-serif;
     font-size: 15px;
     border-radius: 25px;
 }
@@ -229,5 +244,31 @@ body{
    padding-top: 12px;
    padding-bottom: 12px;
    text-decoration: none;
-   color: #0008F;
+   color: #0008;
 }
+/*Separator é referente a barra que está no final do site*/
+.separator{
+    width: 100%;
+    height: 2px;
+    background-color: #5554516e;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.footer-col i{
+    font-size: 32px;
+    margin-right: 14px;
+}
+.footer-col a{
+    text-decoration: none;
+    color: #000;
+}
+.row{ 
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+    color: #000;
+    list-style-type: none;
+
+}
+
+   
